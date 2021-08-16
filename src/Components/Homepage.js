@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import Foto from './Images/Congorra.JPG'
 
 class Homepage extends Component {
   render() {
@@ -10,21 +11,20 @@ class Homepage extends Component {
             <div className="profile-img-border">
               <img
                 className="profile-img"
-                src="images/DSC_5211-00.jpg"
-                alt="Ismail"
+                src={Foto}
+                alt="Walter"
               />
             </div>
             <div className="banner-text">
-              <h1>Asp .Net Full Stack Developer</h1>
+              <h1>Full Stack Developer</h1>
               <hr />
               <p>
-                HTML | CSS | BOOTSTRAP | PHP | MYSQL | C# | ASP .NET CORE | SQL
-                SERVER
+                Html | Css | Javascript | React | Redux | Express | PostgreSQL | Typescript | Node 
               </p>
               <div className="social-links">
                 {/* LinkedIn */}
                 <a
-                  href="http://facebook.com/ismail5g"
+                  href="https://www.facebook.com/wcuberas"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -34,21 +34,8 @@ class Homepage extends Component {
                     aria-hidden="true"
                   ></i>{" "}
                 </a>
-                {/* LinkedIn */}
                 <a
-                  href="https://twitter.com/ismail_hosen_3g"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {" "}
-                  <i
-                    className="fa fa-twitter-square"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </a>
-                {/* LinkedIn */}
-                <a
-                  href="https://github.com/ismail5g"
+                  href="https://github.com/wcuberas"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -58,9 +45,8 @@ class Homepage extends Component {
                     aria-hidden="true"
                   ></i>{" "}
                 </a>
-                {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/in/ismail5g/"
+                  href="https://www.linkedin.com/in/walter-cuberas-dev/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

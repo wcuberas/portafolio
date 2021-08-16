@@ -5,15 +5,15 @@ import Main from "./Components/Main";
 import { Link } from 'react-router-dom';
 
 function App() {
-  return (
+  return ( 
     <div className="demo-big-content">
       <Layout>
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">My Portfolio</Link>} scroll>
           <Navigation>
-            <Link to="/Resume">Resume</Link>
-            <Link to="/Aboutme">About Me</Link>
-            <Link to="/Projects">Projects</Link>
-            <Link to="/Contact">Contact</Link>
+            <Link className="nav" to="/Resume">Resume</Link>
+            <Link className="nav" to="/Aboutme">About Me</Link>
+            <Link className="nav" to="/Projects">Projects</Link>
+            <Link className="nav" to="/Contact">Contact</Link>
           </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">My Portfolio</Link>}>
@@ -34,3 +34,4 @@ function App() {
 }
 
 export default App;
+
