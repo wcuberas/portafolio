@@ -12,6 +12,8 @@ import {
   CardMenu,
   IconButton,
 } from "react-mdl";
+import '../css/Projects.css';
+
 
 class Projects extends Component {
   constructor(props) {
@@ -20,9 +22,14 @@ class Projects extends Component {
       activeTab: 0,
     };
 
-    this.chatApplication = () => {
+    this.quizApp = () => {
       window.location.assign(
-        "https://github.com/ismail5g/Chat-Application-vai-Web-Socket"
+        "https://github.com/wcuberas/quizz-app"
+      );
+    };
+    this.booksQuiz = () => {
+      window.location.assign(
+        "https://booksquizapp-2f4fa.web.app/"
       );
     };
     this.calculator = () => {
@@ -31,22 +38,22 @@ class Projects extends Component {
       );
     };
     this.portfolio = () => {
-      window.location.assign("https://github.com/ismail5g/my-portfolio");
+      window.location.assign("https://github.com/wcuberas/portafolio");
     };
-    this.portfoliolive = () => {
-      window.location.assign("https://devismail.netlify.app/");
+    this.pokemon = () => {
+      window.location.assign("https://github.com/wcuberas/PI-Pokemon-FT13");
     };
-    this.ecommerce = () => {
-      window.location.assign("https://github.com/ismail5g/EasyBazar");
-    };
-    this.leavemangement = () => {
-      window.location.assign("https://github.com/ismail5g/Leave-Management");
-    };
-    this.crudapplication = () => {
+    this.trekker = () => {
       window.location.assign(
-        "https://github.com/ismail5g/BookListCrud_MVC-Asp.Net-Core"
+        "https://github.com/davidcesaretti/reservar"
       );
     };
+    this.trekkerApp = () => {
+      window.location.assign(
+        "https://trekker-59f4e.web.app/"
+      );
+    };
+
     this.facebook = () => {
       window.location.assign(
         "https://github.com/ismail5g/Facebook-Education-Perpose"
@@ -56,20 +63,18 @@ class Projects extends Component {
       if (this.state.activeTab === 0) {
         return (
           <div className="projects-grid">
-            {/* Chat-Application */}
+            {/* Books Quiz App */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/chat.jpg) center / cover",
+                  background: "url(images/books2.png) center / cover",
                 }}
               >
-                Chat Application
               </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is a chat Application developed on a running course from
-                UDEMY.
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+                Books Quiz App
               </CardText>
               <CardActions border>
                 <Button
@@ -77,11 +82,11 @@ class Projects extends Component {
                   raised
                   ripple
                   primary
-                  onClick={this.chatApplication.bind(this)}
+                  onClick={this.quizApp.bind(this)}
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
+                <Button raised accent ripple style={{ margin: "0 10px" }} onClick={this.booksQuiz.bind(this)}>
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
@@ -89,7 +94,7 @@ class Projects extends Component {
                 <IconButton name="share" />
               </CardMenu>
             </Card>
-            {/* Calculator */}
+            {/* Weather App */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
@@ -98,10 +103,9 @@ class Projects extends Component {
                   background: "url(images/calculator.png) center / cover",
                 }}
               >
-                Standard Calculator
               </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is a first REACT app i developed. The noobie calculator
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+                Weather App 
               </CardText>
               <CardActions border>
                 <Button
@@ -121,20 +125,18 @@ class Projects extends Component {
                 <IconButton name="share" />
               </CardMenu>
             </Card>
-            {/* Portfolio */}
+            {/* Movie Finder */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/portfolio.png) center / cover",
+                  background: "url(images/calculator.png) center / cover",
                 }}
               >
-                Portfolio
               </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This portfolio designed by REACT JS on 25th August 2020. And it
-                takes 2 days to Complete.
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+                Movie Finder 
               </CardText>
               <CardActions border>
                 <Button
@@ -142,7 +144,7 @@ class Projects extends Component {
                   raised
                   ripple
                   primary
-                  onClick={this.portfolio.bind(this)}
+                  onClick={this.calculator.bind(this)}
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
@@ -159,20 +161,20 @@ class Projects extends Component {
       } else if (this.state.activeTab === 1) {
         return (
           <div className="projects-grid">
-            {/* Ecom-Application */}
+            {/* Pokemon App */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/e-commerce.png) center / cover",
+                  background: "url(images/pokemon.png) center / cover ",
+                  backgroundSize: '300px',
+                  backgroundRepeat: 'no-repeat'
                 }}
               >
-                E-Commerce Shop
               </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is an Ecommerce Online Shop developed with following MODAZ
-                e-commerce theme.
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+                Pokemon App
               </CardText>
               <CardActions border>
                 <Button
@@ -180,11 +182,11 @@ class Projects extends Component {
                   raised
                   ripple
                   primary
-                  onClick={this.ecommerce.bind(this)}
+                  onClick={this.pokemon.bind(this)}
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
+                <Button raised accent ripple style={{ margin: "0 10px" }} disabled>
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
@@ -192,20 +194,19 @@ class Projects extends Component {
                 <IconButton name="share" />
               </CardMenu>
             </Card>
-            {/* Leave-management */}
+            
+            {/* Trekker App */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/leave-management.png) center / cover",
+                  background: "url(images/trekker.jpeg) center / cover",
                 }}
               >
-                Leave Management
               </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is dynamic Leave management system developed for an
-                corporate organization.
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+               Trekker Vacations Rentals
               </CardText>
               <CardActions border>
                 <Button
@@ -213,44 +214,11 @@ class Projects extends Component {
                   raised
                   ripple
                   primary
-                  onClick={this.leavemangement.bind(this)}
+                  onClick={this.trekker.bind(this)}
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
-                  <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: "#fff" }}>
-                <IconButton name="share" />
-              </CardMenu>
-            </Card>
-            {/* Ecom-Application */}
-            <Card shadow={5} className="project-item">
-              <CardTitle
-                style={{
-                  color: "#333",
-                  height: "180px",
-                  background: "url(images/crud-app.png) center / cover",
-                }}
-              >
-                CRUD Application
-              </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is a CRUD Application developed on a running course from
-                UDEMY.
-              </CardText>
-              <CardActions border>
-                <Button
-                  style={{ margin: "0 10px" }}
-                  raised
-                  ripple
-                  primary
-                  onClick={this.crudapplication.bind(this)}
-                >
-                  <i className="fa fa-github" aria-hidden="true" /> Github
-                </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
+                <Button raised accent ripple style={{ margin: "0 10px" }}  onClick={this.trekkerApp.bind(this)}>
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
@@ -261,76 +229,76 @@ class Projects extends Component {
           </div>
         );
       }
-      if (this.state.activeTab === 2) {
-        return (
-          <div>
-            {/* Store-Procedure */}
-            <Card shadow={5} className="project-item">
-              <CardTitle
-                style={{
-                  color: "#333",
-                  height: "180px",
-                  background: "url(images/store-procedure.png) center / cover",
-                }}
-              >
-                Store Procedures
-              </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This is simple Store Procedure among lot's of SQL query.
-              </CardText>
-              <CardActions border>
-                <Button style={{ margin: "0 10px" }} raised ripple primary>
-                  <i className="fa fa-github" aria-hidden="true" /> Github
-                </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
-                  <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: "#fff" }}>
-                <IconButton name="share" />
-              </CardMenu>
-            </Card>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            {/* facebook */}
-            <Card shadow={5} className="project-item">
-              <CardTitle
-                style={{
-                  color: "#333",
-                  height: "180px",
-                  background: "url(images/facebook.jpg) center / cover",
-                }}
-              >
-                Facebook
-              </CardTitle>
-              <CardText style={{ textAlign: "justify" }}>
-                This facebook developed on a semester for educational purpose
-                only.
-              </CardText>
-              <CardActions border>
-                <Button
-                  style={{ margin: "0 10px" }}
-                  raised
-                  ripple
-                  primary
-                  onClick={this.facebook.bind(this)}
-                >
-                  <i className="fa fa-github" aria-hidden="true" /> Github
-                </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
-                  <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
-                </Button>
-              </CardActions>
-              <CardMenu style={{ color: "#fff" }}>
-                <IconButton name="share" />
-              </CardMenu>
-            </Card>
-          </div>
-        );
-      }
+      // if (this.state.activeTab === 2) {
+      //   return (
+      //     <div>
+      //       {/* Store-Procedure */}
+      //       <Card shadow={5} className="project-item">
+      //         <CardTitle
+      //           style={{
+      //             color: "#333",
+      //             height: "180px",
+      //             background: "url(images/store-procedure.png) center / cover",
+      //           }}
+      //         >
+      //           Store Procedures
+      //         </CardTitle>
+      //         <CardText style={{ textAlign: "justify" }}>
+      //           This is simple Store Procedure among lot's of SQL query.
+      //         </CardText>
+      //         <CardActions border>
+      //           <Button style={{ margin: "0 10px" }} raised ripple primary>
+      //             <i className="fa fa-github" aria-hidden="true" /> Github
+      //           </Button>
+      //           <Button raised accent ripple style={{ margin: "0 10px" }}>
+      //             <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
+      //           </Button>
+      //         </CardActions>
+      //         <CardMenu style={{ color: "#fff" }}>
+      //           <IconButton name="share" />
+      //         </CardMenu>
+      //       </Card>
+      //     </div>
+      //   );
+      // } else {
+      //   return (
+      //     <div>
+      //       {/* facebook */}
+      //       <Card shadow={5} className="project-item">
+      //         <CardTitle
+      //           style={{
+      //             color: "#333",
+      //             height: "180px",
+      //             background: "url(images/facebook.jpg) center / cover",
+      //           }}
+      //         >
+      //           Facebook
+      //         </CardTitle>
+      //         <CardText style={{ textAlign: "justify" }}>
+      //           This facebook developed on a semester for educational purpose
+      //           only.
+      //         </CardText>
+      //         <CardActions border>
+      //           <Button
+      //             style={{ margin: "0 10px" }}
+      //             raised
+      //             ripple
+      //             primary
+      //             onClick={this.facebook.bind(this)}
+      //           >
+      //             <i className="fa fa-github" aria-hidden="true" /> Github
+      //           </Button>
+      //           <Button raised accent ripple style={{ margin: "0 10px" }}>
+      //             <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
+      //           </Button>
+      //         </CardActions>
+      //         <CardMenu style={{ color: "#fff" }}>
+      //           <IconButton name="share" />
+      //         </CardMenu>
+      //       </Card>
+      //     </div>
+      //   );
+      // }
     };
   }
 
@@ -343,9 +311,7 @@ class Projects extends Component {
           ripple
         >
           <Tab>React JS</Tab>
-          <Tab>Asp .Net</Tab>
-          <Tab>SQL SERVER</Tab>
-          <Tab>PHP</Tab>
+          <Tab>Full Stack</Tab>
         </Tabs>
         <Grid>
           <Cell col={12}>

@@ -1,0 +1,15 @@
+.projects-grid {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .project-item {
+    float: left;
+    margin: 50px 55px 0px 50px;
+  }
+
+  
