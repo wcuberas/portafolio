@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cuba from './Images/cubaa.jpeg'
 import cv from './CV/CV-CuberasWalter.pdf'
+import '../css/Aboutme.css'
 
 class Aboutme extends Component {
   render() {
