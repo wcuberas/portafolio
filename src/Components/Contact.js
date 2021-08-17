@@ -15,14 +15,13 @@ class Contact extends Component {
           <Cell col={6}>
               <h2>Contact Me</h2>
               <hr />
-              <div className="contact-list">
-                  
+              <div className="contact-list"> 
               <List>
                   <ListItem>
-                      <ListItemContent style={{fontSize: '27px', fontFamily: 'Anton', color: 'white'}}><i className="fa fa-phone-square" aria-hidden='true'></i>+54 3731 444330</ListItemContent>
+                      <ListItemContent className='lista'><i className="fa fa-phone-square" aria-hidden='true'></i>+54 3731 444330</ListItemContent>
                   </ListItem>
-                  <ListItem>
-                      <ListItemContent style={{fontSize: '27px', fontFamily: 'Anton', color: 'white'}}><i className="fa fa-envelope" aria-hidden='true'></i>wcuberas@gmail.com</ListItemContent>
+                  <ListItem >
+                      <ListItemContent className='lista'><i className="fa fa-envelope" aria-hidden='true'></i>wcuberas@gmail.com</ListItemContent>
                   </ListItem>
               </List>
               </div>

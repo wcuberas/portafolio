@@ -36,3 +36,20 @@
     font-size: 50px;
     margin-right: 5rem;
   }
+
+  .lista {
+    font-size: 27px;
+    color: white;
+    font-family: 'Anton';
+  }
+
+  @media (max-width: 800px) {
+    .contact-body {
+      grid-template-columns: 1fr;
+      position: absolute;
+    }
+    .lista {
+      font-size: 1.3rem;
+      
+    }
+  }
