@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import '../css/Contact.css';
-import fotoContact from './Images/FotoBuzoNegro.jpeg'
+import fotoContact from './Images/FotoPerfil.jpeg'
 
 class Contact extends Component {
   render() {

@@ -32,9 +32,9 @@ class Projects extends Component {
         "https://booksquizapp-2f4fa.web.app/"
       );
     };
-    this.calculator = () => {
+    this.movieFinder = () => {
       window.location.assign(
-        "https://github.com/ismail5g/Calculator-Using-ReactJS"
+        "https://github.com/wcuberas/movie-finder"
       );
     };
     this.portfolio = () => {
@@ -95,7 +95,7 @@ class Projects extends Component {
               </CardMenu>
             </Card>
             {/* Weather App */}
-            <Card shadow={5} className="project-item">
+            {/* <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
@@ -124,14 +124,14 @@ class Projects extends Component {
               <CardMenu style={{ color: "#fff" }}>
                 <IconButton name="share" />
               </CardMenu>
-            </Card>
+            </Card> */}
             {/* Movie Finder */}
             <Card shadow={5} className="project-item">
               <CardTitle
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/calculator.png) center / cover",
+                  background: "url(images/movieFinder.png) center / cover",
                 }}
               >
               </CardTitle>
@@ -144,7 +144,7 @@ class Projects extends Component {
                   raised
                   ripple
                   primary
-                  onClick={this.calculator.bind(this)}
+                  onClick={this.movieFinder.bind(this)}
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
