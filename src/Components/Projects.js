@@ -47,9 +47,6 @@ class Projects extends Component {
         "https://github.com/wcuberas/movie-finder"
       );
     };
-    this.portfolio = () => {
-      window.location.assign("https://github.com/wcuberas/portafolio");
-    };
     this.pokemon = () => {
       window.location.assign("https://github.com/wcuberas/PI-Pokemon-FT13");
     };
@@ -96,7 +93,7 @@ class Projects extends Component {
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }} >
+                <Button raised accent ripple style={{ margin: "0 10px" }} onClick={this.booksQuiz.bind(this)} >
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
@@ -189,7 +186,7 @@ class Projects extends Component {
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }}>
+                <Button raised accent ripple style={{ margin: "0 10px" }} disabled >
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
