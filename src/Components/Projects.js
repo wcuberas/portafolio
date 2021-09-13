@@ -37,7 +37,7 @@ class Projects extends Component {
         "https://github.com/wcuberas/react-calculator"
       );
     };
-    // this.booksQuiz = () => {
+    // this.appCalculator = () => {
     //   window.location.assign(
     //     "https://booksquizapp-2f4fa.web.app/"
     //   );
@@ -96,7 +96,7 @@ class Projects extends Component {
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }} onClick={this.booksQuiz.bind(this)}>
+                <Button raised accent ripple style={{ margin: "0 10px" }} >
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
@@ -166,6 +166,37 @@ class Projects extends Component {
                 <IconButton name="share" />
               </CardMenu>
             </Card> */}
+            {/* Calculator */}
+            <Card shadow={5} className="project-item">
+              <CardTitle
+                style={{
+                  color: "#333",
+                  height: "180px",
+                  background: "url(images/calculator.png) center / cover",
+                }}
+              >
+              </CardTitle>
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+                Calculator 
+              </CardText>
+              <CardActions border>
+                <Button
+                  style={{ margin: "0 10px" }}
+                  raised
+                  ripple
+                  primary
+                  onClick={this.calculator.bind(this)}
+                >
+                  <i className="fa fa-github" aria-hidden="true" /> Github
+                </Button>
+                <Button raised accent ripple style={{ margin: "0 10px" }}>
+                  <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
+                </Button>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
             {/* Movie Finder */}
             <Card shadow={5} className="project-item">
               <CardTitle
