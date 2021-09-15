@@ -37,11 +37,11 @@ class Projects extends Component {
         "https://github.com/wcuberas/react-calculator"
       );
     };
-    // this.appCalculator = () => {
-    //   window.location.assign(
-    //     "https://booksquizapp-2f4fa.web.app/"
-    //   );
-    // };
+    this.appCalculator = () => {
+      window.location.assign(
+        "https://calculator-e6599.web.app/"
+      );
+    };
     this.movieFinder = () => {
       window.location.assign(
         "https://github.com/wcuberas/movie-finder"
@@ -124,7 +124,7 @@ class Projects extends Component {
                 >
                   <i className="fa fa-github" aria-hidden="true" /> Github
                 </Button>
-                <Button raised accent ripple style={{ margin: "0 10px" }} disabled>
+                <Button raised accent ripple style={{ margin: "0 10px" }} onClick={this.appCalculator.bind(this)} >
                   <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
                 </Button>
               </CardActions>
