@@ -1,6 +1,6 @@
 .foto-about {
     width: 400px;
-    height: 400px;
+    height: 500px;
     border: 2px solid #ddd;
     margin-left: auto;
     margin-right: auto;
@@ -84,5 +84,6 @@
     .about-img {
       display: flex;
       padding-bottom: 10px;
+      justify-content: center;
     }
   }
