@@ -63,12 +63,18 @@ class Projects extends Component {
         "https://trekker-59f4e.web.app/"
       );
     };
-
-    this.facebook = () => {
+    this.tiendaMueble = () => {
       window.location.assign(
-        "https://github.com/ismail5g/Facebook-Education-Perpose"
+        "https://github.com/wcuberas/bootstrap5-ecommerce"
       );
     };
+    this.tiendaMueblePage = () => {
+      window.location.assign(
+        "https://trekker-59f4e.web.app/"
+      );
+    };
+
+
     this.toggleCategories = () => {
       if (this.state.activeTab === 0) {
         return (
@@ -269,38 +275,42 @@ class Projects extends Component {
             </Card>
           </div>
         );
-      }
-      // if (this.state.activeTab === 2) {
-      //   return (
-      //     <div>
-      //       {/* Store-Procedure */}
-      //       <Card shadow={5} className="project-item">
-      //         <CardTitle
-      //           style={{
-      //             color: "#333",
-      //             height: "180px",
-      //             background: "url(images/store-procedure.png) center / cover",
-      //           }}
-      //         >
-      //           Store Procedures
-      //         </CardTitle>
-      //         <CardText style={{ textAlign: "justify" }}>
-      //           This is simple Store Procedure among lot's of SQL query.
-      //         </CardText>
-      //         <CardActions border>
-      //           <Button style={{ margin: "0 10px" }} raised ripple primary>
-      //             <i className="fa fa-github" aria-hidden="true" /> Github
-      //           </Button>
-      //           <Button raised accent ripple style={{ margin: "0 10px" }}>
-      //             <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
-      //           </Button>
-      //         </CardActions>
-      //         <CardMenu style={{ color: "#fff" }}>
-      //           <IconButton name="share" />
-      //         </CardMenu>
-      //       </Card>
-      //     </div>
-      //   );
+      } else if (this.state.activeTab === 2) {
+        return (
+          <div>
+            {/* TiendaMueble */}
+            <Card shadow={5} className="project-item">
+              <CardTitle
+                style={{
+                  color: "#333",
+                  height: "180px",
+                  background: "url(images/trekker.jpeg) center / cover",
+                }}
+              >
+              </CardTitle>
+              <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
+               TiendaMueble
+              </CardText>
+              <CardActions border>
+                <Button
+                  style={{ margin: "0 10px" }}
+                  raised
+                  ripple
+                  primary
+                  onClick={this.tiendaMueble.bind(this)}
+                >
+                  <i className="fa fa-github" aria-hidden="true" /> Github
+                </Button>
+                <Button raised accent ripple style={{ margin: "0 10px" }}  onClick={this.tiendaMueblePage.bind(this)}>
+                  <i className="fa fa-desktop" aria-hidden="true" /> Live Demo
+                </Button>
+              </CardActions>
+              <CardMenu style={{ color: "#fff" }}>
+                <IconButton name="share" />
+              </CardMenu>
+            </Card>
+          </div>
+        )};
       // } else {
       //   return (
       //     <div>
@@ -353,6 +363,7 @@ class Projects extends Component {
         >
           <Tab>React JS</Tab>
           <Tab>Full Stack</Tab>
+          <Tab>Html</Tab>
         </Tabs>
         <Grid>
           <Cell col={12}>
