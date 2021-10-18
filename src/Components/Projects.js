@@ -67,7 +67,7 @@ class Projects extends Component {
     };
     this.tiendaMueblePage = () => {
       window.location.assign(
-        "https://trekker-59f4e.web.app/"
+        "https://romantic-villani-cfb703.netlify.app"
       );
     };
 
@@ -281,7 +281,7 @@ class Projects extends Component {
                 style={{
                   color: "#333",
                   height: "180px",
-                  background: "url(images/trekker.jpeg) center / cover",
+                  background: "url(images/tiendaMueble.png) center / cover",
                 }}
               >
               </CardTitle>
