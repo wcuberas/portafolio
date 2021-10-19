@@ -89,7 +89,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                 Books Quiz App
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }} >
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
@@ -120,7 +120,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                 Calculator 
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }}>
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
@@ -182,7 +182,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                 Movie Finder 
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }}>
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
@@ -220,7 +220,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                 Pokemon App
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }}>
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
@@ -252,7 +252,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                Trekker Vacations Rentals
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }}>
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
@@ -274,7 +274,7 @@ class Projects extends Component {
         );
       } else if (this.state.activeTab === 2) {
         return (
-          <div>
+          <div className="projects-grid">
             {/* TiendaMueble */}
             <Card shadow={5} className="project-item">
               <CardTitle
@@ -288,7 +288,7 @@ class Projects extends Component {
               <CardText style={{ textAlign: "justify", fontSize: '1.5rem' }}>
                TiendaMueble
               </CardText>
-              <CardActions border>
+              <CardActions border style={{ display: "flex", justifyContent: "space-around" }}>
                 <Button
                   style={{ margin: "0 10px" }}
                   raised
